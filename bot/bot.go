@@ -10,8 +10,8 @@ import (
 	"github.com/bwmarrin/discordgo"
 )
 
-func Run() {
-    discord, err := discordgo.New("Bot " + "TOKEN")
+func Run(token string) {
+    discord, err := discordgo.New("Bot " + token)
     if err != nil {
         fmt.Print("hubo un error\n")
         return
